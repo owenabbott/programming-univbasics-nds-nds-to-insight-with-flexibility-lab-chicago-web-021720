@@ -64,7 +64,6 @@ end
 
 def gross_per_studio(collection)
 
-studio_list=[]
 gross_list=[]
 studio_gross=Hash.new
 for i in collection
@@ -76,10 +75,10 @@ for i in collection
 end
 
 
-#for i in studio_gross
-#  gross_list.push(0)
-#end
-#pp gross_list
+for i in studio_gross
+  gross_list.push(0)
+end
+pp gross_list
 #above I was trying to make an array of ints coinciding with the array of hashes constructed above. I was then going to make another iteration after this looping through 'collection' and adding gross values to the corresponding indexes. I have a fuzzy idea on how to do this but haven't tried it yet.
 
 
