@@ -71,6 +71,7 @@ for i in collection
   studio=info[:studio]
   gross=info[:worldwide_gross]
   studio_gross[studio]=0
+  studio_gross[studio]+=gross
   #initially I was trying to use 'studio_gross[studio]=gross+=gross' above but this threw an error. I changed it to 0 as placeholder values.
 end
 
