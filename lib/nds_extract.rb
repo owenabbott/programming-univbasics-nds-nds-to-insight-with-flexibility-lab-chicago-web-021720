@@ -82,7 +82,20 @@ pp gross_list
 #above I was trying to make an array of ints coinciding with the array of hashes constructed above. I was then going to make another iteration after this looping through 'collection' and adding gross values to the corresponding indexes. I have a fuzzy idea on how to do this but haven't tried it yet.
 
 
+collection.each do |key, value|
+  if key==
 
+
+#  total=0
+#  answer = {}
+#  for i in collection
+#  #pp i 
+ # total+=i[:worldwide_gross]
+#  answer[i[:studio]]=total
+#  total=0
+#end
+#return answer
+#this was my earlier attempt, but it didn't work. Might be a good idea to come back to it so I'm saving it here.
 
 #  total=0
 #  studios=[]
