@@ -64,38 +64,50 @@ end
 
 def gross_per_studio(collection)
 
-gross_list=[]
 studio_gross=Hash.new
 for i in collection
   info=i
   studio=info[:studio]
-  gross=info[:worldwide_gross]
   studio_gross[studio]=0
+end
+#pp studio_gross
+
+
+for i in collection
+  info=i 
+  studio=info[:studio]
+  gross=info[:worldwide_gross]
+  #pp studio_gross[studio]
   studio_gross[studio]+=gross
+end
+pp studio_gross  
+
+#  studio_gross[studio]+=gross
   #initially I was trying to use 'studio_gross[studio]=gross+=gross' above but this threw an error. I changed it to 0 as placeholder values.
-end
+
+#pp studio_gross
+#return studio_gross
 
 
-for i in studio_gross
-  gross_list.push(0)
-end
-pp gross_list
+#for i in studio_gross
+#  gross_list.push(0)
+#end
+#pp gross_list
 #above I was trying to make an array of ints coinciding with the array of hashes constructed above. I was then going to make another iteration after this looping through 'collection' and adding gross values to the corresponding indexes. I have a fuzzy idea on how to do this but haven't tried it yet.
 
 
-collection.each do |key, value|
-  if key==
+#collection.each do |key, value|
+#  if key==
 
-
-#  total=0
+#total=0
 #  answer = {}
 #  for i in collection
-#  #pp i 
- # total+=i[:worldwide_gross]
-#  answer[i[:studio]]=total
-#  total=0
+#  total+=i[:worldwide_gross]
+#  answer[i[:studio]]=0
+#  answer[i[:studio]]+=total
 #end
 #return answer
+
 #this was my earlier attempt, but it didn't work. Might be a good idea to come back to it so I'm saving it here.
 
 #  total=0
