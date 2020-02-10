@@ -41,7 +41,7 @@ def movies_with_director_key(name, movies_collection)
   for i in movies_collection
     array.push movie_with_director_name(name, i)
   end
-  #pp array
+  pp array
   return array
 
   
@@ -80,7 +80,7 @@ for i in collection
   #pp studio_gross[studio]
   studio_gross[studio]+=gross
 end
-pp studio_gross  
+#pp studio_gross  
 
 #  studio_gross[studio]+=gross
   #initially I was trying to use 'studio_gross[studio]=gross+=gross' above but this threw an error. I changed it to 0 as placeholder values.
